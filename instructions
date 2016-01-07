@@ -14,5 +14,7 @@ in app/assets/javascripts/application.js
     Create Root page / Login Page
 rails generate devise:install
 rails generate devise User
-rails g devise:views
+rails g devise:views:locale it
+rails g devise:views:bootstrap_templates
 bundle exec rake db:migrate
+rails g scaffold_controller Users
