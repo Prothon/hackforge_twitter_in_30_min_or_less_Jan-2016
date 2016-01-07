@@ -1,0 +1,17 @@
+    Configure Bootstrap
+
+$ mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss
+in application.scss
+    // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+    @import "bootstrap-sprockets";
+    @import "bootstrap";
+
+in app/assets/javascripts/application.js
+    //= require jquery
+    //= require bootstrap-sprockets
+
+
+    Create Root page / Login Page
+rails generate devise User
+
+
