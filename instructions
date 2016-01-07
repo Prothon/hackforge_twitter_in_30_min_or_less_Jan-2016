@@ -15,5 +15,4 @@ in app/assets/javascripts/application.js
 rails generate devise:install
 rails generate devise User
 rails g devise:views
-
-
+bundle exec rake db:migrate
