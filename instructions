@@ -17,4 +17,4 @@ rails generate devise User
 rails g devise:views:locale it
 rails g devise:views:bootstrap_templates
 bundle exec rake db:migrate
-rails g scaffold_controller Users
+rails generate controller Users index show
