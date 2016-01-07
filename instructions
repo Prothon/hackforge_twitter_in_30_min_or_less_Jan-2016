@@ -12,6 +12,8 @@ in app/assets/javascripts/application.js
 
 
     Create Root page / Login Page
+rails generate devise:install
 rails generate devise User
+rails g devise:views
 
 
