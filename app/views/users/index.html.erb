@@ -26,6 +26,15 @@
         <i class="glyphicon glyphicon-edit"></i> New Tweet
       <% end %>
 
+      <% @tweets.each do |tweet| %>
+          <div class="well well-lg">
+            <h2>By: <%= tweet %></h2>
+            <pre>
+              <%= tweet.micropost %>
+            </pre>
+          </div>
+      <% end %>
+
     </div>
   </div>
 </div>
