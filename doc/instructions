@@ -20,3 +20,6 @@ rails g devise:views:locale it
 rails g devise:views:bootstrap_templates
 bundle exec rake db:migrate
 rails generate controller Users index show
+
+rails generate scaffold Tweets
+bundle exec rake db:migrate

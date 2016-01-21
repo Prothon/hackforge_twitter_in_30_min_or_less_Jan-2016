@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  resources :users, :only => [:index, :show]
+  resources :tweets
 
   devise_for :users
+
+  resources :users, :only => [:index, :show]
 
   devise_scope :user do
     authenticated :user do

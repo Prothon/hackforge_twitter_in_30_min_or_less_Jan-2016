@@ -1,11 +1,11 @@
 <div class="row">
-  <div class="col-lg-8 col-md-8 ">
-    <div class="well well-lg">
-      <h2>Hello <%= @user.email %></h2>
-    </div>
-    <div class="well well-lg">
-      <h2>Your Latest Tweets:</h2>
-      <p>Stuff</p>
-    </div>
+  <div class="well well-lg">
+    <h1 class="text-center"><i class="glyphicon glyphicon-user"></i> <%= @user.email %></h1>
   </div>
+  <h2>Your Latest Tweets:</h2>
+  <% @user.tweets.each do |tweet| %>
+      <div class="well well-lg">
+        <%= tweet.micropost %>
+      </div>
+  <% end %>
 </div>

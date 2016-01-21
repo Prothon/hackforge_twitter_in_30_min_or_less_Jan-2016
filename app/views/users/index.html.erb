@@ -3,6 +3,8 @@
     <div class="well well-lg">
       <h2>Users</h2>
       <ul style="list-style: none;">
+
+
         <% @users.each do |user| %>
             <li>
               <%= link_to user_path(user.id) do %>
@@ -10,13 +12,20 @@
               <% end %>
             </li>
         <% end %>
+
+
       </ul>
     </div>
   </div>
   <div class="col-lg-8 col-md-8">
     <div class="well well-lg">
       <h2>Tweets</h2>
-      <a class="btn btn-large btn-default" href="#"><i class="glyphicon glyphicon-edit"></i> New Tweet</a>
+
+      <!--<a class="btn btn-large btn-default" href="#"><i class="glyphicon glyphicon-edit"></i> New Tweet</a>-->
+      <%= link_to new_tweet_path, class: "btn btn-large btn-default" do %>
+        <i class="glyphicon glyphicon-edit"></i> New Tweet
+      <% end %>
+
     </div>
   </div>
 </div>

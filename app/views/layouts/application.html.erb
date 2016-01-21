@@ -24,20 +24,21 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <% if user_signed_in? %>
-          <li>
-            <a href="#">
-              <i class="glyphicon glyphicon-edit"></i> New Tweet
-            </a>
-          </li>
+            <li>
+              <a href="#"><i class="glyphicon glyphicon-edit"></i> New Tweet</a>
+            </li>
+            <li>
+              <%= link_to "Home", users_path %>
+            </li>
         <% end %>
       </ul>
       <% if user_signed_in? %>
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-          </li>
-        </ul>
-        <% end %>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+            </li>
+          </ul>
+      <% end %>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
