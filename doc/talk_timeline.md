@@ -9,7 +9,8 @@ Step 1: Create the app
 Step 2: Configure Gem File
 ---------------------------
 
-1. bundle install
+1. Add Gems to Gemfile
+2. bundle install
 
 Step 3: Configure Bootstrap
 ---------------------------
@@ -33,6 +34,10 @@ Step 4: Create Root page / Login Page
 4. rails g devise:views:bootstrap_templates
 5. bundle exec rake db:migrate
 6. rails generate controller Users index show
+7. Modify Routes File
+8. Replace application layout
+9. Replace users index and show views
+10. Controller modifications
 
 Step 5: Create tweets
 ---------------------
