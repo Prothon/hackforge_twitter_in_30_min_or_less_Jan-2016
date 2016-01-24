@@ -37,6 +37,7 @@ gem 'bootstrap-sass', '~> 3.3.6'    # https://github.com/twbs/bootstrap-sass
 gem 'devise'                        # https://github.com/plataformatec/devise
 gem 'devise-bootstrap-views'        # https://github.com/hisea/devise-bootstrap-views
 gem "better_errors"                 # https://github.com/charliesome/better_errors
+gem 'annotate'                      # https://github.com/ctran/annotate_models
 ####################################################
 
 group :development, :test do

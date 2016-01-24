@@ -3,9 +3,14 @@
     <h1 class="text-center"><i class="glyphicon glyphicon-user"></i> <%= @user.email %></h1>
   </div>
   <h2>Your Latest Tweets:</h2>
-  <% @user.tweets.each do |tweet| %>
-      <div class="well well-lg">
-        <%= tweet.micropost %>
-      </div>
-  <% end %>
+  <div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2">
+    <% @user.tweets.each do |tweet| %>
+        <div class="well well-lg">
+          <pre>
+            <%= tweet.micropost %>
+          </pre>
+          <p><%= tweet.created_at.localtime %></p>
+        </div>
+    <% end %>
+  </div>
 </div>

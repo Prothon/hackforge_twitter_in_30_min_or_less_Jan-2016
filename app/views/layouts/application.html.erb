@@ -25,7 +25,10 @@
       <ul class="nav navbar-nav">
         <% if user_signed_in? %>
             <li>
-              <a href="#"><i class="glyphicon glyphicon-edit"></i> New Tweet</a>
+              <!--<a href="#"><i class="glyphicon glyphicon-edit"></i> New Tweet</a>-->
+              <%= link_to new_tweet_path do %>
+                  <i class="glyphicon glyphicon-edit"></i> New Tweet
+              <% end %>
             </li>
             <li>
               <%= link_to "Home", users_path %>

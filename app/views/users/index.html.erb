@@ -18,20 +18,21 @@
     </div>
   </div>
   <div class="col-lg-8 col-md-8">
-    <div class="well well-lg">
+    <div class="">
       <h2>Tweets</h2>
-
       <!--<a class="btn btn-large btn-default" href="#"><i class="glyphicon glyphicon-edit"></i> New Tweet</a>-->
       <%= link_to new_tweet_path, class: "btn btn-large btn-default" do %>
         <i class="glyphicon glyphicon-edit"></i> New Tweet
       <% end %>
+      <hr />
 
       <% @tweets.each do |tweet| %>
           <div class="well well-lg">
-            <h2>By: <%= tweet %></h2>
+            <h2>By: <%= tweet.user.email %></h2>
             <pre>
               <%= tweet.micropost %>
             </pre>
+            <p><%= tweet.created_at.localtime %></p>
           </div>
       <% end %>
 
