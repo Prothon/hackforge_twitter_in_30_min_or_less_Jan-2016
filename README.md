@@ -1,4 +1,4 @@
-# Twittr in 30 Minutes or Less
+# Twittr in 30 Minutes or Less (Hopefully)
 This is the code repo for the up coming Hackforge talk on January 27th, 2016 on how to make a Twitter clone using Ruby On Rails 4.2 with Ruby 2.2 in 30 minutes or less.
 Since it's missing a bunch of features, like being usable, we will call it twittr. 
 
