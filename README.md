@@ -1,4 +1,4 @@
-# hackforge_twitter_in_30_min_or_less_Jan-2016
+# Twittr in 30 Minutes or Less
 This is the code repo for the up coming Hackforge talk on January 27th, 2016 on how to make a Twitter clone using Ruby On Rails 4.2 with Ruby 2.2 in 30 minutes or less.
 Since it's missing a bunch of features, like being usable, we will call it twittr. 
 
@@ -43,3 +43,6 @@ Step 5: Create tweets
 1. rails generate scaffold Tweets
 2. bundle exec rake db:migrate
 3. annotate
+
+
+URL: https://github.com/Prothon/hackforge_twitter_in_30_min_or_less_Jan-2016
